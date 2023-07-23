@@ -1,0 +1,344 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.headerlastimg{
+    width: 30px;
+    height: 30px;
+}
+#logoimg{
+    width: 220px;
+    height: 70px;
+}
+.main_header{
+    width: 1536px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.main_header>div{
+    width: auto;
+}
+
+.headerlastdiv{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    /* border: 1px solid red; */
+    
+}
+.headerlastdiv>div{
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-left:15px;
+    margin-right:15px ;
+    text-align: center;
+}
+.searchbardiv{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+
+}
+#inputsearch{
+    width: 700px;
+    height: 40px;
+    background-color: #e9f6f7;
+    border: none;
+    border-radius: 5px;
+}
+.searchbardiv>div:nth-last-child(1){
+    border: 1px solid black;
+    width: 110px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: gray;
+}
+.main_footer{
+    display: flex;
+    width: 1536px;
+    margin: auto;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.main_footer>div:nth-child(1){
+    display: flex;
+    padding-top: 15px;
+}
+.footerancher{
+    border-right: 1px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.main_footer>div:nth-child(2){
+    display: flex;
+}
+#lastfooterimg{
+    width: 150px;
+    height: 50px;
+}
+#copyright{
+    display: block;
+    margin-top: 18px;
+}
+#searchdivbarcolor{
+   background-image: -webkit-linear-gradient(0deg,#ff934b 0%,#ff5e62 100%);
+   border: none;
+   border-radius: 5px;
+}
+.menubar{
+    width: 1536px;
+    background-color: #24a3b5;
+    /* text-align: center; */
+}
+.staticbar{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.menubar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+.staticbar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.menubar ul li{
+    width: auto;
+    margin: 10px;
+    /* padding:5px; */
+}
+.staticbar ul li{
+    width: auto;
+    margin: 10px;
+}
+.active,.menubar ul li:hover{
+    border-radius: 3px;
+}
+
+.submenu{
+    display: none;
+    padding:15px 15px 15px 15px
+}
+.supersubmenu{
+    display: flex;
+}
+
+.menubar ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    background-color: white;
+    /* border-radius: 5px; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+.menubar ul li:hover .submenu ul{
+    display: block;
+    margin-right: 15px;
+}
+.menubar ul li:hover .submenu ul li{
+    border-bottom: 1px dotted white;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 0px;
+}
+.menubar ul li:hover .submenu ul li:last-child{
+    border-bottom: none;
+}
+.staticbarhover:hover{
+    color: #24a3b5;
+}
+#slider{
+    width: 100%;
+}
+.sliderimg{
+    width: 97%;
+    height: 345px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.wrapper{
+    width: 1536px;
+    background-color: #eff7fa;
+}
+#dealsoftheday{
+    width: 97%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+}
+#slider-deals{
+    display: flex;
+    overflow: hidden;
+}
+
+#slider-deals>div{
+    margin-right: 20px;
+    margin-left: 25px;
+}
+#bt1{
+position:absolute;
+width: 36px;
+height: 70px;
+border: none;
+background: #24a3b5;
+top: 1;
+bottom: 0;
+margin: auto 0;
+font-size: 25px;
+color: white;
+cursor: pointer;
+}
+#bt2{
+    position:absolute;
+    width: 36px;
+    height: 70px;
+    border: none;
+    background: #24a3b5;
+    right: 0;
+    bottom: 0;
+    margin: auto 0;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    }
+    .h2dealoftheday{
+        margin-left: 20px;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    #dailyessentials{
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        margin-left: 20px;
+    }
+    .dsimg{
+        max-width: 145px;
+        height: 145px;
+        margin: 0 auto;
+        margin-top: 25px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .dsimg2{
+        max-width: 145px;
+        height: 145px;
+        margin: 0 auto;
+        margin-top: 25px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    #slider-deals2{
+        display: flex;
+        overflow: hidden;
+    }
+    #slider-deals2>div{
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+    #bt11{
+        position:absolute;
+        width: 36px;
+        height: 70px;
+        border: none;
+        top: 1780px;
+        bottom: 0;
+        background: #24a3b5;
+        margin: auto 0;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #bt22{
+        position:absolute;
+        width: 36px;
+        height: 70px;
+        border: none;
+        right: 0;
+        bottom: 1;
+        top: 1750px;
+        background: #24a3b5;
+        margin: auto 0;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    } 
+    #gridimage{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .footer{
+        display: flex;
+        width: 1536px;
+        justify-content: space-around;
+        border: 1px solid #ddd;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .footerul{
+        list-style: none;
+        margin-top: 10px;
+        color: #757575;
+    }
+    .footerul>li{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .footerul>li:hover{
+        cursor: pointer;
+        color: #24a3b5;
+    }
+    .footerwrapperul{
+        display: flex;
+        width: 1530px;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .footerwrapper{
+        border-top: 1px solid #ddd;
+        margin-top: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footerwrapperul>div{
+        width: 30%;
+        border-right: 1px solid #ddd;
+        padding-bottom: 15px;
+    }
+    #footermidone{
+        width: 250px;
+        height: 34px;
+        margin-top: 10px;
+    }
+    #footermidtwo{
+        width: 700px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .footermid{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+    }

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+
+    <style>
+             #loginp{
+                cursor: pointer;
+                display: inline;
+            }
+            #ullogin{
+                list-style: none;
+                padding-left: 0px;
+            }
+            #ullogin>li{
+                text-align: left;
+                /* border: 1px solid red; */
+                margin-top: 10px;
+                font-size: 15px;
+                font-weight: 400;
+                
+                padding: 12px;
+                cursor: pointer;
+            }
+            #ullogin>li>a{
+                text-decoration: none;
+                color: #555;
+            }
+            #ullogin>li>a:hover{
+                color: #24a3b5;
+            }
+            #div2{
+                visibility: hidden;
+                width: 220px;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                position: absolute;
+                left: 100px;
+                top: 45px;
+                /* top:35px */
+            }
+            #div3{
+                background-color: #24a3b5;
+                padding:10px 0px 10px 5px;
+                font: normal 400 14px 'Roboto', Arial, Helvetica, sans-serif
+            }
+
+    </style>
+</head>
+<body>
+ <!----------header---------->
+ <div class=main_header>
+    <div class="logo_div">
+        <img src="./imageedit_1_7418394901.png" alt="" id="logoimg">
+    </div>
+    <div class="searchbardiv">
+        <div><input type="text" placeholder="           What is on your mind today?" id="inputsearch"></div>
+        <div id="searchdivbarcolor"><a href="#" style="color: white;">Search</a></div> 
+    </div>
+    <div class="headerlastdiv">
+            <div id="location" ><img src="https://www.iconpacks.net/icons/2/free-location-icon-2955-thumb.png" alt="" class="headerlastimg"></div>
+            <div id="notification" ><img class="headerlastimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHkAJ0Sd-3cX_nmWpr2fv4Y6utNEeGZCbS0qbtMpatx1je8DEfmFCqBGTk4p2FUWkq7zA&usqp=CAU" alt=""></div>
+            <div id="wishlist"><img class="headerlastimg" src="https://t4.ftcdn.net/jpg/01/67/08/85/360_F_167088585_e1xeqVRqF3dTKGKGVhibUHpvZlTR9fHd.jpg" alt=""></div>
+            <div id="cart" ><img class="headerlastimg" src="https://cdn-icons-png.flaticon.com/512/5552/5552326.png" alt=""></div>
+            <div >
+                <p id="loginp"> Login</p>
+        <div id="div2" >
+            <div id="div3"><h2 style="color: white;">Login/Register</h2></div>
+                <ul id="ullogin" style="background-color: white;">
+                <li><a href="./html/signin.html">User Login</a></li>
+                <li><a href="./html/admin.html">Admin Login</a></li>
+                <li><a href="">My Profile</a></li>
+                <li><a href="">My Chat</a></li>
+                <li><a href="">My Orders</a></li>
+            </ul> 
+        </div>
+            </div>
+            <div><a href=""></a></div>
+    </div>
+    </div>
+
+<!--drop down menus-->
+<div class="menubar">
+    <ul>
+        <li class="active"><a href="#" style="color: white; text-transform: uppercase;
+            font-size: 12px;">MOBILES AND MORE</a>
+            <div class="submenu">
+                <div class="supersubmenu">
+                    <div>
+                        <ul>
+                            <h4>Smartphones & Tablets</h4>
+                            <li><a href="">I KALL</a></li>
+                            <li><a href="">Mi</a></li>
+                            <li><a href="">Realme</a></li>
+                            <li><a href="">Samsung</a></li>
+                            <li><a href="">Vivo</a></li>
+                            <li><a href="">Oppo</a></li>
+                            <li><a href="">Apple</a></li>
+                            <li><a href="">Tecno</a></li>
+                            <li><a href="">Infinix</a></li>
+                            <li><a href="">Micromax</a></li>
+                            <h4>Refurbished Smartphones</h4>
+                            <h4>Refurbished Feature Phones</h4>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h4>Feature Phones</h4>
+                            <li><a href="">Micromax</a></li>
+                            <li><a href="">I KALL</a></li>
+                            <li><a href="">Nokia</a></li>
+                            <li><a href="">MRT</a></li>
+                            <li><a href="">Heemax</a></li>
+                            <li><a href="">Karbonn</a></li>
+                            <li><a href="">Kechaoda</a></li>
+                            <li><a href="">Gfive</a></li>
+                            <li><a href="">Blackbear</a></li>
+                            <li><a href="">Samsung</a></li>
+                            <div>
+                                <h4>Gaming Consoles</h4>
+                                <li><a href="">Gaming Titles</a></li>
+                                <li><a href="">Gaming Accessories</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h4>Bestsellers in Accessories</h4>
+                            <li><a href="">Top Rated Accessories</a></li>
+                            <li><a href="">Combos</a></li>
+                            <li><a href="">Power Banks</a></li>
+                            <li><a href="">Cases & Covers</a></li>
+                            <li><a href="">Mobile Holders</a></li>
+                            <li><a href="">Cables</a></li>
+                            <li><a href="">Adapter & Chargers</a></li>
+                            <li><a href="">Selfie Sticks</a></li>
+                            <div>
+                                <h4>Storage Devices</h4>
+                                <li><a href="">Memory Cards</a></li>
+                                <li><a href="">Pen Drives</a></li>
+                                <li><a href="">External Hard disks</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h4>Feature Phones</h4>
+                            <li><a href="">Micromax</a></li>
+                            <li><a href="">I KALL</a></li>
+                            <li><a href="">Nokia</a></li>
+                            <li><a href="">MRT</a></li>
+                            <li><a href="">Heemax</a></li>
+                            <li><a href="">Karbonn</a></li>
+                            <li><a href="">Kechaoda</a></li>
+                            <li><a href="">Gfive</a></li>
+                            <li><a href="">Blackbear</a></li>
+                            <li><a href="">Samsung</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h4>Branded Accessories</h4>
+                            <li><a href="">Tiitan</a></li>
+                            <li><a href="">Toshiba</a></li>
+                            <li><a href="">Sandisk</a></li>
+                            <li><a href="">Philips</a></li>
+                            <li><a href="">Portronics</a></li>
+                            <li><a href="">Zebronics</a></li>
+                            <li><a href="">Boat</a></li>
+                            <li><a href="">Syska</a></li>
+                            <li><a href="">JBL</a></li>
+                            <div>
+                            <h4>Audio Store</h4>
+                            <li><a href="">Headphones & Earphones</a></li>
+                            <li><a href="">Bluetooth Earphones</a></li>
+                            <li><a href="">Bluetooth Speakers</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h4>Laptops</h4>
+                            <li><a href="">HP</a></li>
+                            <li><a href="">Lenovo</a></li>
+                            <li><a href="">Asus</a></li>
+                            <li><a href="">Acer</a></li>
+                            <h4>Refurbished Laptops</h4>
+                            <div>
+                            <h4>Laptop Accessories</h4>
+                            <li><a href="">Mouse</a></li>
+                            <li><a href="">Keyboards</a></li>
+                            <li><a href="">Laptop Bags</a></li>
+                            <li><a href="">Laptop Skins</a></li>
+                            <h4>Printers</h4>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+        <li><a href="#" style="color: white; text-transform: uppercase;
+            font-size: 12px;">MEN</a></li>
+        <li><a href="#" style="color: white; text-transform: uppercase;
+            font-size: 12px;">HOME & KITCHEN</a></li>
+        <li><a href="#" style="color: white; text-transform: uppercase;
+            font-size: 12px;">APPLICANCES</a></li>
+        <li><a href="#" style="color: white; text-transform: uppercase;
+            font-size: 12px;">SPORTS AND MORE</a></li>
+        <li><a href="#" style="color: white; text-transform: uppercase;
+            font-size: 12px;">ESSENTIALS</a></li>
+        <li><a href="#" style="color: white; text-transform: uppercase;
+            font-size: 12px;">OFFERS</a></li>
+        <li><a href="#" style="color: white; text-transform: uppercase;
+            font-size: 12px;">GLOBAL SHOPPING</a></li>
+    </ul>
+</div>
+<div class="staticbar">
+    <ul>
+        <li><a href="" class="staticbarhover">Time Sales</a></li>
+        <li><a href="" class="staticbarhover">Flu Care</a></li>
+        <li><a href="" class="staticbarhover">Food & Beverage</a></li>
+        <li><a href="" class="staticbarhover">Personal Hygiene</a></li>
+        <li><a href="" class="staticbarhover">Home Cleaning</a></li>
+        <li><a href="" class="staticbarhover">Nutrition & Supplements</a></li>
+        <li><a href="" class="staticbarhover">Kitchen & Dining</a></li>
+        <li><a href="" class="staticbarhover">Refurbished Mobiles</a></li>
+        <li><a href="" class="staticbarhover">Mobile Accessories</a></li>
+    </ul>
+</div>
+
+<!---------slider------------->
+<div class="wrapper">
+    <div id="slider">
+    </div>
+    <h2 class="h2dealoftheday">Deals of the Day</h2>
+    <div id="dealsoftheday">
+        <div id="slider-deals">
+            <div class="item">
+            <img src="https://cdn.shopclues.com/images1/thumbnails/115246/200/200/152689876-115246212-1659944528.jpg" alt="">
+            <h4 style="color: gray;">Venerate headphone stand</h4>
+            <h3 class="" style="margin: 10px;" >₹ 269.00</h3>
+            </div>
+            <div class="item">
+                <img src="https://cdn.shopclues.com/images1/thumbnails/71795/200/200/128902274-71795769-1653057803.jpg" alt="">
+                <h4 style="color: gray;">MTR MT310 Dual Sim</h4>
+                <h3 style="margin-top: 5px;"  class="">₹ 749.00</h3>
+            </div>
+            <div class="item">
+                <img src="https://cdn.shopclues.com/images1/thumbnails/115737/200/200/152853766-115737455-1637323013.jpg" alt="">
+                <h4 style="color: gray;">Premium Nylon Cable</h4>
+                <h3 class="" style="margin-top: 5px;" >₹ 250.00</h3>
+            </div>
+            <div class="item">
+                <img src="https://cdn.shopclues.com/images1/thumbnails/115044/200/200/152634665-115044372-1629705035.jpg" alt="">
+                <h4 style="color: gray;">Dizom Sz-104 earphone</h4>
+                <h3 class="" style="margin-top: 5px;" >₹ 389.00</h3>
+            </div>
+            <div class="item">
+                <img src="https://cdn.shopclues.com/images1/thumbnails/95123/200/200/142672875-95123237-1645016499.jpg" alt="">
+                <h4 style="color: gray;">ZEB-UCC100 Data charger</h4>
+                <h3 class="" style="margin-top: 5px;" >₹ 139.00</h3>
+            </div>
+            <div class="item">
+                <img src="https://cdn.shopclues.com/images1/thumbnails/95155/200/200/142698419-95155481-1653692385.jpg" alt="">
+                <h4 style="color: gray;">USB Type-C</h4>
+                <h3 class="" style="margin-top: 5px;" >₹ 302.00</h3>
+            </div>
+            <div class="item">
+                <img src="https://cdn.shopclues.com/images1/thumbnails/81476/200/200/135627858-81476269-1665754103.jpg" alt="">
+                <h4 style="color: gray;">ESHOPINDIA Data charger</h4>
+                <h3 class="" style="margin: 10px;" >₹ 270.00</h3>
+            </div> 
+        </div>
+        <button id="bt1" onclick="prev1()"><</button>
+        <button id="bt2" onclick="next1()">></button>
+    </div>
+    <h2 class="h2dealoftheday">Daily Essentials</h2>
+    <div id="dailyessentials">
+        <div class="dailyitems">
+            <img class="dsimg" src="https://cdn.shopclues.com/images1/thumbnails/105589/280/1/149278210-105589660-1585251645.jpg" alt="">
+            <h4 style="color: gray;">Cooking Essentials</h4>
+            <h3 style="margin-top: 10px;">Starting at Rs.49</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg"src="https://cdn.shopclues.com/images1/thumbnails/105589/320/1/149278289-105589933-1585251885.jpg" alt="">
+            <h4 style="color: gray;">Skin,Hair & Body</h4>
+            <h3 style="margin-top: 10px;">Starting at Rs.99</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg"src="https://cdn.shopclues.com/images1/thumbnails/104441/280/1/148788228-104441348-1578472379.jpg" alt="">
+            <h4 style="color: gray;">Kitchen Essentials</h4>
+            <h3 style="margin-top: 10px;">Starting at Rs.49</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg"src="https://cdn.shopclues.com/images1/thumbnails/105520/280/1/149254102-105520442-1584863770.jpg" alt="">
+            <h4 style="color: gray;">Maska,Sankitizers & More</h4>
+            <h3 style="margin-top: 10px;">Starting at Rs.49</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg" src="https://cdn.shopclues.com/images/thumbnails/42332/280/1/966030079473255231PUTPaCZnL146606056314665883171470319810.jpg" alt="">
+            <h4 style="color: gray;">Cleaning & Dusting Supplies</h4>
+            <h3 style="margin-top: 10px;">Starting at Rs.109</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg" src="https://cdn.shopclues.com/images1/thumbnails/105577/320/320/149274414-105577366-1585235325.jpg" alt="">
+            <h4 style="color: gray;">Laundary Detergents</h4>
+            <h3 style="margin: 10px;">Starting at Rs.49</h3>
+        </div>
+    </div>
+    <div id="gridimage">
+        <div><img style="height: 118px; width: 500px;" src="https://cdn.shopclues.com/images/banners/Diet&Nutrition_ColorGold_3rdJune_PR.jpg" alt=""></div>
+        <div><img style="height: 118px;width: 500px;" src="https://cdn.shopclues.com/images/banners/goldbanner_Beauty_3rdJune_PR.jpg" alt=""></div>
+        <div><img style="height: 118px; width: 500px;" src="https://cdn.shopclues.com/images/banners/goldbanner_WaterBottles_3rdJune_PR.jpg" alt=""></div>
+    </div>
+    <h2 class="h2dealoftheday">Festive Specials</h2>
+    <div id="dailyessentials">
+        <div class="dailyitems">
+            <img class="dsimg" src="https://cdn.shopclues.com/images/thumbnails/88912/320/320/131487154GOLDENPEACOCK1512550255.jpg" alt="">
+            <h4 style="color: gray;">Women's Ethnic Wear</h4>
+            <h3 style="margin-top: 10px;">Upto 80% Off</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg"src="https://cdn.shopclues.com/images/detailed/41945/HandloomPinkKurta1_1469600960.jpg" alt="">
+            <h4 style="color: gray;">Men's Ethnic Wear</h4>
+            <h3 style="margin-top: 10px;">Min 40% Off</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg"src="https://cdn.shopclues.com/images/detailed/85345/129033198_Untitled1copy_1506507048.jpg" alt="">
+            <h4 style="color: gray;">Ethnic Footwear</h4>
+            <h3 style="margin-top: 10px;">Upto 80% Off</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg"src="https://cdn.shopclues.com/images/thumbnails/48680/320/320/61SUwF0UAAL1480795166.jpg" alt="">
+            <h4 style="color: gray;">Wooden Temples</h4>
+            <h3 style="margin-top: 10px;">Upto 60% Off</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg" src="https://cdn.shopclues.com/images/thumbnails/67262/320/320/IMAES9GDZV3NPG8M1491081901.jpg" alt="">
+            <h4 style="color: gray;">Pooja Essentials</h4>
+            <h3 style="margin-top: 10px;">Upto 70% off</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg" src="https://cdn.shopclues.com/images/thumbnails/84338/320/320/128352190Ganesh1505896312.jpg" alt="">
+            <h4 style="color: gray;">Wall decors</h4>
+            <h3 style="margin: 10px;">Min 60% Off</h3>
+        </div>
+    </div>
+    <h2 class="h2dealoftheday">Brand Store</h2>
+    <div id="dealsoftheday">
+        <div id="slider-deals2">
+            <div class="item2">
+            <img class="dsimg2" src="https://cdn.shopclues.com/images1/thumbnails/109822/280/1/150760050-109822495-1600850631.jpg" alt="">
+            <h4 style="color: gray;">Redmi</h4>
+            <h3 class="" style="margin: 10px;" >Save up to Rs.5000</h3>
+            </div>
+            <div class="item2">
+                <img class="dsimg2"src="https://cdn.shopclues.com/images/thumbnails/34620/280/1/902417708981309282209372miltonwaterbottleset1434449243144186494711454507692145672090914577949341459228900.jpg" alt="">
+                <h4 style="color: gray;">Milton</h4>
+                <h3 style="margin-top: 5px;"  class="">Up to 60% Off</h3>
+            </div>
+            <div class="item2">
+                <img  class="dsimg2" src="https://cdn.shopclues.com/images1/thumbnails/109013/280/1/150523151-109013699-1603186269.jpg" alt="">
+                <h4 style="color: gray;">Realme</h4>
+                <h3 class="" style="margin-top: 5px;" >Save up to Rs.5000</h3>
+            </div>
+            <div class="item2">
+                <img  class="dsimg2" src="https://cdn.shopclues.com/images1/thumbnails/109124/280/1/150563834-109124498-1600113360.jpg" alt="">
+                <h4 style="color: gray;">Vivo</h4>
+                <h3 class="" style="margin-top: 5px;" >Save up to Rs.5000</h3>
+            </div>
+            <div class="item2">
+                <img  class="dsimg2"src="https://cdn.shopclues.com/images1/thumbnails/108804/280/1/150437204-108804736-1602946705.jpg" alt="">
+                <h4 style="color: gray;">Philips</h4>
+                <h3 class="" style="margin-top: 5px;" >Upto 40% Off</h3>
+            </div>
+            <div class="item2">
+                <img  class="dsimg2" src="https://cdn.shopclues.com/images1/thumbnails/108327/320/1/150284086-108327730-1594283471.jpg" alt="">
+                <h4 style="color: gray;">American Tourister</h4>
+                <h3 class="" style="margin-top: 5px;" >Upto 75% Off</h3>
+            </div>
+            <div class="item2">
+                <img class="dsimg2" src="https://cdn.shopclues.com/images1/thumbnails/104122/280/1/148627878-104122294-1577180435.jpg" alt="">
+                <h4 style="color: gray;">Khadi</h4>
+                <h3 class="" style="margin: 10px;" >Starting @ 69</h3>
+            </div> 
+            <div class="item2">
+                <img class="dsimg2" src="https://cdn.shopclues.com/images/thumbnails/22575/320/320/80750890AmericanTouristerSPARTASPINNER55CMSDL180335824160f5e14345268701437545222.jpg" alt="">
+                <h4 style="color: gray;">American Tourister Bag</h4>
+                <h3 class="" style="margin: 10px;" >Up to 40% Off</h3>
+            </div> 
+        </div>
+        <button id="bt11" onclick="prev11()"><</button>
+        <button id="bt22" onclick="next11()">></button>
+    </div>
+    <h2 class="h2dealoftheday">Sports & Health</h2>
+    <div id="dailyessentials">
+        <div class="dailyitems">
+            <img class="dsimg" src="https://cdn.shopclues.com/images1/thumbnails/108803/280/1/150436700-108803780-1596188707.jpg" alt="">
+            <h4 style="color: gray;">Medical Equipment & Aceessor..</h4>
+            <h3 style="margin-top: 10px;">Upto 80% Off</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg"src="https://cdn.shopclues.com/images1/thumbnails/104507/280/1/148819339-104507472-1579085071.jpg" alt="">
+            <h4 style="color: gray;">Fitness Bands & Watches</h4>
+            <h3 style="margin-top: 10px;">Min 80% Off</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg"src="https://cdn.shopclues.com/images/thumbnails/27595/280/1/11448611056.jpg" alt="">
+            <h4 style="color: gray;">Bottles & Shakers</h4>
+            <h3 style="margin-top: 10px;">Upto 80% Off</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg"src="https://cdn.shopclues.com/images1/thumbnails/103419/280/1/148130677-103419160-1571212818.jpg" alt="">
+            <h4 style="color: gray;">Nutritions & Supplements</h4>
+            <h3 style="margin-top: 10px;">Upto 80% Off</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg" src="https://cdn.shopclues.com/images1/thumbnails/95250/280/1/142772233-95250978-1544273464.jpg" alt="">
+            <h4 style="color: gray;">Skipping Ropes</h4>
+            <h3 style="margin-top: 10px;">Starting @ 199</h3>
+        </div>
+        <div class="dailyitems">
+            <img class="dsimg" src="https://cdn.shopclues.com/images1/thumbnails/107160/280/1/149847355-107160132-1590790597.jpg" alt="">
+            <h4 style="color: gray;">Yoga Mats</h4>
+            <h3 style="margin: 10px;">Min 80% Off</h3>
+        </div>
+    </div>
+
+</div>
+    
+
+<!-----------footer----------->
+<div class="footerwrapper">
+    <h2 style="text-align: center;">Band of Trust</h2>
+    <div class="footerwrapperul">
+        <div><img src="" alt=""><h2 style="color: #757575;">Great Selection</h2></div>
+        <div><img src="" alt=""><h2 style="color: #757575;">Low Price</h2></div>
+        <div><img src="" alt=""><h2 style="color: #757575;">Speedy Delivery</h2></div>
+    </div>
+</div>
+<div class="footer">
+    <div>
+        <h4>Shopper Central</h4>
+        <ul class="footerul">
+            <li>Easy Returns & Replacement</li>
+            <li>Sign In/Register</li>
+            <li>Our Policies</li>
+            <li>CluesBucks</li>
+            <li>Payment Options</li>
+            <li>ShopClues Bazaar Surety</li>
+            <li>FAQs (Help)</li>
+            <li>Service Centers</li>
+            <li>User Agreement</li>
+        </ul>
+    </div>
+    <div>
+        <h4>Merchant Central</h4>
+        <ul class="footerul">
+            <li>Merchant Panel</li>
+            <li>How to Sell</li>
+            <li>Comission Structure</li>
+            <li>Fullfillment Policy</li>
+            <li>Policies & Rules</li>
+            <li>User Agreement</li>
+            <li>Testimonials</li>
+            <li>Seller Summit</li>
+            <li>Merchant Blog</li>
+            <li>Developer Resources</li>
+        </ul>
+    </div>
+    <div>
+        <h4>About Us</h4>
+        <ul class="footerul">
+            <li>History</li>
+            <li>Band of Trust</li>
+            <li>In the News</li>
+            <li>Awards</li>
+            <li>Careers</li>
+            <li>Blog</li>
+        </ul>
+    </div>
+    <div>
+        <h4>Contact Us</h4>
+        <ul class="footerul">
+            <li>Merchant Support</li>
+            <li>Bulk Orders</li>
+            <li>Press</li>
+        </ul>
+    </div>
+    <div>
+        <h4>Press</h4>
+        <ul class="footerul">
+            <li>In the News</li>
+        </ul>
+    </div>
+</div>
+<div class="footermid">
+    <div><h3>Keep In Touch</h3><img src="https://images.shopclues.com/images/ui/social-ico@2x.png" alt="" id="footermidone"></div>
+    <div><h3>100% Secure and Trusted Payment</h3><img src=" https://images.shopclues.com/images/ui/pgateway_dkt@2x.png" alt="" id="footermidtwo"></div>
+</div>
+<div class="main_footer">
+  <div>
+    <div><a href="" class="footerancher">Privacy Policy</a></div>
+    <div><a href="" class="footerancher">User Agreement</a></div>
+    <div><a href="" class="footerancher">Notes to Security Practices</a></div>
+    <div><a href="" class="footerancher">Compliance</a></div>
+    <div><a href="" class="footerancher">Wall of Fame</a></div>
+    </div>
+  <div>
+    <div><a href="" id="copyright">Copyright © 2011-2023 Clues Network Pvt. Ltd</a></div>
+    <div><img src="./images/imageedit_1_7418394901.png" alt="" id="lastfooterimg"></div>
+  </div>
+</div>
+</body>
+</html>
+<script src="./js/index.js"></script>
+<script>
+    let va=document.getElementById("div2")
+va.onmouseover=()=>{
+ va.style.visibility='visible'
+}
+va.onmouseout=()=>{
+ va.style.visibility="hidden"
+}
+let a=document.querySelector("#loginp")
+a.onmouseover=()=>{
+ va.style.visibility='visible'
+}
+a.onmouseout=()=>{
+ va.style.visibility="hidden"
+}
+</script>
